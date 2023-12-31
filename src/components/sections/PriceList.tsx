@@ -181,11 +181,9 @@ function PriceList({ data, slug }: { data: SanityPricingSection; slug: string })
               </div>
 
             </div> */}
-            <input
-            type="month" id="monthSelector" name="monthYear"
-              // type="date"
-              // name="startMonth"
-              // id=""
+          <input
+            type="month" id="monthSelector" name="monthYear" placeholder='pick a date'
+            className='p-2 border rounded-lg focus:ring-neutral-600'
               onChange={(e) => {
                 setStartMonth(new Date(e.target.value).getMonth());
                  console.log(new Date(e.target.value).getMonth())
